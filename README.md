@@ -1,5 +1,9 @@
 # cpphook
-hook function in x86-64/linux. 
+Hook function in x86-64/linux. **cpphook** install a jmp instruction in target function head. As below:
+```
+mov $r10 (void*)hook_function_address;
+jmp $r10;
+```
 
 # Build
 ```
